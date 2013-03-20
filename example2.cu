@@ -9,7 +9,7 @@ __global__ void add(int a, int b, int *c) {
 void handleError(cudaError_t err, const char *file, int line) {
  if(err != cudaSuccess) {
  printf( "%s in %s at line %d\n", cudaGetErrorString( err ),
-                __FILE__, __LINE__ );
+                file, line);
         exit( EXIT_FAILURE );
  }
 }
