@@ -1,6 +1,6 @@
 CUDA
 ====
-My experiments with [CUDA] (https://developer.nvidia.com/what-cuda) on [GTX 550 Ti] (http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-780).
+My experiments with [CUDA] (https://developer.nvidia.com/what-cuda).
 
 ###References
 ====
