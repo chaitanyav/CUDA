@@ -88,7 +88,7 @@ struct CPUBitmap {
       exit(EXIT_FAILURE);
     }
 
-    window = glfwCreateWindow(x, y, "Bitmap", NULL, NULL);
+    window = glfwCreateWindow(x, y, "Julia Set", NULL, NULL);
     if(!window) {
       glfwTerminate();
       printf("Failed to create window\n");
@@ -103,7 +103,6 @@ struct CPUBitmap {
       glClearColor( 0.0, 0.0, 0.0, 1.0  );
       glClear( GL_COLOR_BUFFER_BIT );
       glDrawPixels(bitmap->x, bitmap->y, GL_RGBA, GL_UNSIGNED_BYTE, bitmap->pixels);
-      glFlush();
       glfwSwapBuffers(window);
       glfwPollEvents();
     }
